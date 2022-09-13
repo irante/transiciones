@@ -21,6 +21,7 @@
 .header {
    
     position: fixed;
+    z-index: 1;
     
   }
 
@@ -125,14 +126,16 @@ ul li:hover ul {
     border-radius: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
 }
 
 
 
 
 .prod_oferta:hover {
-
+    transform: scale(1.1,1.1);
     border: solid 4px rgba(69, 231, 19, 0.993);
+    box-shadow:  5px 10px 5px rgb(48, 168, 56);
   }
   
   .primer_producto {
@@ -185,6 +188,7 @@ ul li:hover ul {
 
 
   footer {
+    margin-top: 20px;
     padding-left: 20px;    
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
@@ -283,11 +287,12 @@ justify-content: space-evenly;
     border-radius: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
 
 }
 
 .prodPc:hover {
-
+transform: scale(1.1,1.1);
 box-shadow:  5px 10px 5px rgb(69, 166, 230);
 font-size: 1.1rem;
 
@@ -440,11 +445,11 @@ font-size: 1.5rem;
         border-radius: 10px;
         text-align: center;
         font-family: 'Roboto', sans-serif;
-    
+        transition: all 0.5s ease;
     }
 
     .prodNote:hover {
-
+        transform: scale(1.1,1.1);
         box-shadow:  5px 10px 5px rgb(69, 166, 230);
         font-size: 1.1rem;
         
@@ -486,9 +491,14 @@ font-size: 1.5rem;
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
-        
-        
+        transition: all 0.5s ease;
+  
     }
+
+    .pc:hover{
+        transform: scale(1.05,1.05);
+    }
+
     .imagenpc {
         width: 190px;
         height: 200px;
@@ -507,8 +517,11 @@ font-size: 1.5rem;
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
+        transition: all 0.5s ease;
         
-        
+    }
+    .notebooks:hover{
+        transform: scale(1.05,1.05);
     }
 
     .imagennotebook {
@@ -532,7 +545,11 @@ font-size: 1.5rem;
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
+        transition: all 0.5s ease;
         
+    }
+    .contacto:hover{
+        transform: scale(1.05,1.05);
     }
 
     .imagen_contacto {
