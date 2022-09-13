@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    background-color: #fafafae4;
+  }
+
+.logo {
+    width: 100vw;
+}
+
+  nav {
+    margin-top: -5px;
+    width: 100vw;
+   
+  }
+
+.header {
+   
+    position: fixed;
+    
+  }
+
+
+
+
+ul {
+    list-style-type: none;
+    margin-top: -4px;
+    background-color: rgb(5, 175, 119);
+    color: rgb(252, 252, 252);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    
+    
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding-left: 50px;
+    position: relative;
+    
+    
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+ul ul li {
+    display: block;
+}
+ul li:hover ul {
+    display: block;
+}
+
+.menuCat {
+    display: none;
+}
+
+.banner_nvidia {
+    width: 100vw;
+    height: 250px;
+    margin-top: 182px;
+    
+}
+
+.titulo_ofertas {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 300px;
+    height: 40px;
+    border: solid 1px ;
+    border-radius: 10px ;
+    text-align: center;
+    padding-bottom: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(122, 15, 215, 0.945);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.2rem;
+}
+
+.sectionIndex {
+    margin: 2px;
+    border: solid 1px rgb(211, 211, 211); 
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fbfc+0,e8eeef+35,d1ccea+100 */
+    background: #f7fbfc; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #f7fbfc 0%, #e8eeef 35%, #d1ccea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #f7fbfc 0%,#e8eeef 35%,#d1ccea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #f7fbfc 0%,#e8eeef 35%,#d1ccea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#d1ccea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5"
+    "cuadro6 cuadro7 cuadro8 cuadro9 cuadro10";
+    justify-content: center;
+
+
+}
+
+
+.pic_prod_of {
+    width: 210px;
+    height: 250px;
+}
+
+
+
+.prod_oferta {
+    
+   margin: 10px;
+    border: solid 3px rgba(0, 0, 0, 0.082);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.prod_oferta:hover {
+
+    border: solid 4px rgba(69, 231, 19, 0.993);
+  }
+  
+  .primer_producto {
+    grid-area: cuadro2;
+    
+  }
+
+  .segundo_producto{
+    grid-area: cuadro3;
+  }
+
+.tercer_producto {
+    grid-area: cuadro4;
+}
+  
+.pc {
+    width: 200px;
+    height: 250px;
+    border: rgba(5, 175, 104)solid 2px;
+    border-radius: 10px;
+    background-color: rgb(5, 175, 104);
+    display:none ;
+}
+
+
+.notebooks {
+    width: 200px;
+    height: 250px;
+    border: rgb(5, 175, 104) solid 2px;
+    border-radius: 10px;
+    background-color: rgb(5, 175, 104);
+    display:none ;
+}
+
+.contacto {
+    width: 200px;
+    height: 250px;
+    border: rgb(5, 175, 104) solid 2px;
+    border-radius: 20px;
+    background-color: rgb(5, 175, 104);
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+  footer {
+    padding-left: 20px;    
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    color: white;
+    background-image: url(../Imagenes/fondo_footer.jpg);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "mapa dire . . ."
+    "phone numTel . . ."
+    "wspPic numeroTelWsp . . . "
+    "relojPic semana . . ."
+    ". sabado . . .";
+    gap: 10px;
+    
+    
+}
+
+.picMapa {
+    width: 30px;
+    grid-area: mapa ;
+}
+
+.picPhone {
+    width: 30px;
+    grid-area: phone ;
+}
+
+.wspPic {
+    width: 30px;
+    grid-area: wspPic;
+}
+
+.relojPic {
+    width: 30px;
+    grid-area: relojPic;
+}
+
+.dire {
+grid-area: dire;
+}
+
+.numTel {
+    grid-area: numTel;
+
+}
+
+.numTelWsp {
+    grid-area: numeroTelWsp;
+}
+
+.semana {
+    grid-area: semana;
+
+}
+
+.sabado{
+    grid-area: sabado;
+
+}
+
+
+/*pc de escritorio -------------------------------------------------- */
+
+.bannerMarcasPcs {
+    width: 100vw;
+    height: 80px;
+    margin-top: 185px;
+}
+
+.sectionPcs {
+margin-top: 50px;
+margin-bottom: 70px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+
+
+.picPcs {
+
+    width: 250px;
+    height: 220px;
+}
+
+.prodPc {
+    padding-top: 20px;
+    margin: 20px;
+    width: 270px;
+    height: 390px;
+    border: solid 3px rgba(0, 0, 0, 0.082); 
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.prodPc:hover {
+
+box-shadow:  5px 10px 5px rgb(69, 166, 230);
+font-size: 1.1rem;
+
+}
+
+
+
+
+
+/*gigabyte g24f....................................................*/
+
+
+
+.bannerGigabyte{
+    width: 100vw;
+    height: 150px;
+    margin-top: 183px;
+}
+
+
+
+
+.sectionGigabyte{
+ margin: 30px;
+ width: 1400px;
+ height: 700px;
+ border: solid rgba(0, 0, 0, 0.293) 1px;   
+ display: grid;
+ grid-template-columns: 1fr 1fr 3fr 2fr;
+ grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: 
+"costado . frente descuento"
+"back . frente  texto  "
+"conecciones . frente texto ";
+
+
+}
+
+.imgdescuento {
+    width: 200px;
+    grid-area: descuento;
+    justify-self: center;
+    align-self: end;
+}
+
+.imgg24fcostado {
+    margin-left: 10px;
+    width: 200px;
+    border: solid black 1px;
+    grid-area: costado;
+    align-self: center;
+}
+
+ .imgg24fback {
+    margin-left: 10px;
+    width: 200px;
+    border: solid black 1px;
+    grid-area: back;
+    align-self: center;
+}
+
+.imgg24fconecciones {
+    margin-left: 10px;
+    padding: 5px;
+    width: 200px;
+    border: solid black 1px;
+    grid-area: conecciones;
+    align-self: center;
+}
+
+
+
+
+.Imgg24fFrente {
+    width: 600px;
+    grid-area: frente;
+}
+
+.specs {
+grid-area: texto;
+font-family: 'Roboto', sans-serif;
+justify-self: center;
+font-size: 1.5rem;
+
+}
+
+/* Contacto ..........................................................*/
+.ContactoTitulo {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(38, 168, 197);
+
+
+}
+
+.sectionContacto {
+    border: solid rgb(12, 177, 67) 1px;
+    margin-top: 70px;
+    margin-left: 10vmax;
+    margin-bottom: 120px;
+    padding: 20PX;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow:  5px 2px 5px rgba(13, 179, 68, 0.648);
+    border-radius: 10px;
+   
+ 
+}
+
+
+  /*notebooks........................................................*/
+
+  .bannerNotebooks {
+    width: 100vw;
+    height: 80px;
+    margin-top: 183px;
+  }
+
+
+  .sectionNotebooks {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+
+
+    .picNote {
+    
+        width: 320px;
+        height: 200px;
+    }
+    
+    .prodNote {
+        padding-top: 20px;
+        margin: 20px;
+        width: 350px;
+        height: 390px;
+        border: solid 3px rgba(0, 0, 0, 0.082); 
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+
+    .prodNote:hover {
+
+        box-shadow:  5px 10px 5px rgb(69, 166, 230);
+        font-size: 1.1rem;
+        
+        }
+
+  
+
+
+
+/*Media Query ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/* Index ........................................................*/
+
+
+@media only screen and (max-width:768px){
+    .primer_producto {
+        
+        display: none;
+        
+    }
+
+    .segundo_producto{
+        
+        display: none;
+      }
+
+    .tercer_producto {
+    
+        display: none;
+    }
+
+    .pc {
+        display: grid;
+        grid-area: cuadro2 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        
+        
+    }
+    .imagenpc {
+        width: 190px;
+        height: 200px;
+    }
+
+    .pc a {
+        text-decoration: none;
+    }
+
+    .notebooks {
+        display: grid;
+        grid-area: cuadro3 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        
+        
+    }
+
+    .imagennotebook {
+        width: 190px;
+        height: 200px;
+    }   
+
+    
+    .notebooks a {
+        text-decoration: none;
+    }
+
+    
+
+    .contacto {
+        display: grid;
+        grid-area: cuadro7 ;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        
+    }
+
+    .imagen_contacto {
+        width: 190px;
+        height: 200px;
+        padding: 1px;
+    }
+
+    .contacto a {
+        text-decoration: none;
+    }
+
+    .barraNav{
+        display: none;
+    }
+
+    .titulo_ofertas{
+        display: none;
+    }
+
+    .banner_nvidia {
+        width: 100vw;
+        height: 120px;
+        margin-top: 0px;
+        margin-top: 50px;
+        
+    }
+
+
+}
+ /*pcs .............................................................*/
+ 
+ @media only screen and (max-width:768px){
+    .sectionPcs {
+        flex-direction: column;
+        align-content: center;
+       
+        }
+        
+        
+        .bannerMarcasPcs {
+            width: 100vw;
+            height: 80px;
+            margin-top: 85px;
+        }
+
+    .menu {
+        display: none;
+    }
+    
+    }
+
+    /* Notebooks ................................................................. */
+
+
+    @media only screen and (max-width:768px){
+        .sectionNotebooks {
+            
+            margin-left: 50px;
+            flex-direction: column;
+            align-content: center;
+                    
+        }
+                    
+                    
+        .bannerNotebooks {
+        width: 100vw;
+        height: 80px;
+        margin-top: 85px;
+        }
+            
+                
+                
+     }
+     /* Contacto .........................................................................*/
+
+     @media only screen and (max-width:768px){
+        .sectionContacto {
+        
+        
+        margin-left: 50px;
+       
+        padding: 5PX;
+        width: 79vw;
+        height: 300px;
+        
+        flex-direction: row;
+       
+        justify-content: space-evenly;
+       
+        font-family: 'Roboto', sans-serif;
+        box-shadow:  5px 2px 5px rgba(13, 179, 68, 0.648);
+        border-radius: 10px;
+     
+        }
+
+     }
+
+    /* Monitor Gigabyte ......................................................................*/ 
+     @media only screen and (max-width:768px){
+
+        .bannerGigabyte {
+            margin-top: 110px;
+        }
+
+     .sectionGigabyte{
+        width: 80vw;
+        height: 900px;
+       grid-template-areas: 
+       "frente frente frente frente"
+       "frente frente frente frente  "
+       "descuento descuento texto texto ";
+       
+       }
+
+       .Imgg24fFrente {
+        width: 450px;
+        margin-left: 50px;
+        grid-area: frente;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+       .imgdescuento {
+        width: 130px;
+        grid-area: descuento;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    
+    .imgg24fcostado {
+        display: none;
+    }
+    
+     .imgg24fback {
+        display: none;
+    }
+    
+    .imgg24fconecciones {
+      display: none;
+    }
+    
+    
+    
+    
+    
+    .specs {
+    grid-area: texto;
+    font-family: 'Roboto', sans-serif;
+    justify-self: center;
+    font-size: 1.5rem;
+    
+    }
+
+
+    }
